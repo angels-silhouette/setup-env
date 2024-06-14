@@ -18,8 +18,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
 # build neovim
-mkdir ~/neovim
-cd ~/neovim
+cd 
 git clone https://github.com/neovim/neovim.git
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
