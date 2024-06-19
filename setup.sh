@@ -49,4 +49,4 @@ echo 'alias ls="ls --color=auto"' >> ~/.bash_aliases
 echo 'alias pub-ip="curl ident.me"' >> ~/.bash_aliases
 
 # neovim aliases
-echo 'alias build-nvim="cd ~/neovim && git pull && make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install && cd"' >> ~/.bash_aliases
+echo 'alias build-nvim="cd ~/neovim && git pull && make CMAKE_BUILD_TYPE=Release && sudo make install && cd"' >> ~/.bash_aliases
