@@ -1,4 +1,4 @@
-# ensure nessesary programs are installed
+# ensure necessary programs are installed
 if ! command -v git &> /dev/null
 then
     echo "git not found"
@@ -13,7 +13,7 @@ fi
 git clone --filter=blob:none git@github.com:ryanoasis/nerd-fonts ~/fonts/nerd-fonts
 ~/fonts/nerd-fonts/install.sh
 
-# install nessessary stuff
+# install necessary stuff
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
