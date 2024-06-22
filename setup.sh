@@ -1,11 +1,12 @@
 # ensure necessary programs are installed
-necessary='git make'
+necessary='git make cmake gcc'
 
 for program in $necessary
 do
     if ! command -v $program &> /dev/null
     then
         echo "$program not found"
+        exit 1
     fi
 done
 
