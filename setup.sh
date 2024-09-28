@@ -4,11 +4,15 @@ git clone --filter=blob:none https://github.com/ryanoasis/nerd-fonts ~/fonts/ner
 
 # install necessary stuff
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux-tmp/
 
 # add configs
 git clone https://github.com/angels-silhouette/htop ~/.config/htop
 git clone https://github.com/angels-silhouette/tmux ~/.config/tmux
+mkdir ~/.config/tmux/plugins
+mkdir ~/.config/tmux/plugins/tpm
+mv ~/.config/tmux-tmp/* ~/.config/tmux/plugins/tpm
+rmdir ~/.config/tmux-tmp
 git clone https://github.com/angels-silhouette/nvim ~/.config/nvim
 
 # allow for adding aliases
