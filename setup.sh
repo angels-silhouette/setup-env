@@ -11,8 +11,8 @@ git clone https://github.com/angels-silhouette/htop ~/.config/htop
 git clone https://github.com/angels-silhouette/tmux ~/.config/tmux
 mkdir ~/.config/tmux/plugins
 mkdir ~/.config/tmux/plugins/tpm
-mv ~/.config/tmux-tmp/* ~/.config/tmux/plugins/tpm
-rmdir ~/.config/tmux-tmp
+mv -a ~/.config/tmux-tmp/* ~/.config/tmux/plugins/tpm
+rm -r ~/.config/tmux-tmp
 git clone https://github.com/angels-silhouette/nvim ~/.config/nvim
 
 # allow for adding aliases
