@@ -1,7 +1,3 @@
-# install font
-git clone --filter=blob:none https://github.com/ryanoasis/nerd-fonts ~/fonts/nerd-fonts
-~/fonts/nerd-fonts/install.sh
-
 # install necessary stuff
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux-tmp/
@@ -12,7 +8,7 @@ git clone https://github.com/angels-silhouette/tmux ~/.config/tmux
 mkdir ~/.config/tmux/plugins
 mkdir ~/.config/tmux/plugins/tpm
 mv -a ~/.config/tmux-tmp/* ~/.config/tmux/plugins/tpm
-rm -r ~/.config/tmux-tmp
+rm -rf ~/.config/tmux-tmp
 git clone https://github.com/angels-silhouette/nvim ~/.config/nvim
 
 # allow for adding aliases
