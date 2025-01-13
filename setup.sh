@@ -7,7 +7,7 @@ git clone https://github.com/angels-silhouette/htop ~/.config/htop
 git clone https://github.com/angels-silhouette/tmux ~/.config/tmux
 mkdir ~/.config/tmux/plugins
 mkdir ~/.config/tmux/plugins/tpm
-mv -a ~/.config/tmux-tmp/* ~/.config/tmux/plugins/tpm
+mv ~/.config/tmux-tmp/* ~/.config/tmux/plugins/tpm
 rm -rf ~/.config/tmux-tmp
 git clone https://github.com/angels-silhouette/nvim ~/.config/nvim
 
